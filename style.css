@@ -206,6 +206,8 @@ p.img {
     font-size: large;
     border-radius: 100px;
     border-left: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
     
   }
   
