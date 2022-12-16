@@ -2,6 +2,8 @@ body {
   margin:0;
   font-family:'Times New Roman', Times, serif;
   background-color: white;
+  
+
 }
 
 .topnav {
@@ -54,9 +56,9 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(28, 49, 28);
+  background-color: rgb(8, 120, 248);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(20, 160, 27, 0.952);
   z-index: 1;
   font-family: bradley hand, cursive;
   font-size: larger;
@@ -142,10 +144,17 @@ p.img {
   margin-top: 20px;
   margin-bottom: 20px;
  }
+
+ h3.address {
+   color: white;
+ }
+ p.ip {
+  color: white;
+  background-color: green;
+}
  p.taraba {
   color: rgb(19, 161, 19);
   font-size: 20px;
-  border-style: ;
   border-width: 5px;
   font-family: cursive;
   text-align: center;
@@ -188,7 +197,7 @@ p.img {
     
   }
   
-  p.get {
+  p.start {
     font-family: monospace;
     color: white;
     background-color: black;
@@ -196,6 +205,10 @@ p.img {
     font-size: large;
     border-radius: 100px;
     border-left: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    width: auto;
+    height: auto;
     
   }
   
@@ -219,16 +232,25 @@ p.img {
   }
     img.profile {
       margin-top: 20px;
-      margin-bottom: 0px;
+      
     }
 
     hr.line {
       margin-bottom: 20px;
       margin-top: 20px;
     }
-
-  p.first {
-    text-align: center;
-    font-size: 20px;
-    text-decoration-line: underline;
-  }
+    p.admin {
+      border: transparent;
+      box-shadow: white;
+      box-sizing: content-box;
+      display: grid;
+      text-align: center;
+      border-width: 2px solid grey;
+      text-transform: capitalize;
+    }
+div.new {
+  background-color: black;
+}
+    
+   
+  
