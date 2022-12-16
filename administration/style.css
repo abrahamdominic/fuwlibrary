@@ -1,9 +1,8 @@
 body {
   margin:0;
   font-family:'Times New Roman', Times, serif;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-  padding-left: 20px;
-  padding-right: 20px;
+  background-color: white;
+  
 
 }
 
@@ -57,7 +56,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(13, 101, 201);
+  background-color: rgb(8, 120, 248);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(20, 160, 27, 0.952);
   z-index: 1;
@@ -198,7 +197,7 @@ p.img {
     
   }
   
-  p.get {
+  p.start {
     font-family: monospace;
     color: white;
     background-color: black;
@@ -206,6 +205,10 @@ p.img {
     font-size: large;
     border-radius: 100px;
     border-left: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    width: auto;
+    height: auto;
     
   }
   
@@ -229,8 +232,7 @@ p.img {
   }
     img.profile {
       margin-top: 20px;
-      margin-bottom: 0px;
-      padding-right: 70px;
+      
     }
 
     hr.line {
@@ -246,7 +248,9 @@ p.img {
       border-width: 2px solid grey;
       text-transform: capitalize;
     }
-
+div.new {
+  background-color: black;
+}
     
    
   
