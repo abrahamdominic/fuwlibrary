@@ -54,11 +54,12 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(41, 150, 41);
+  background-color: rgb(28, 49, 28);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   font-family: bradley hand, cursive;
+  font-size: larger;
 }
 
 .dropdown-content a {
@@ -114,6 +115,12 @@ body {
     text-align: left;
   }
 }
+
+p.wukari {
+  font-family: brush script mt, cursive;
+  font-size: 40px;
+  text-align: center;
+}
   
   p.text {
     font-family: sans-serif;
@@ -122,20 +129,45 @@ body {
     color: rgba(36, 36, 133, 0.651);
   }
   
-
+p.img {
+  margin-top: 20px;
+}
 
  span.lord {
-     color: rgb(19, 161, 19);
-     font-size: small;
-     border-style: ;
-     border-width: 5px;
+  color: rgb(19, 161, 19);
+  font-size: 25px;
+  border-width: 5px;
+  font-family: cursive;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
  }
+
+ h3.address {
+   color: coral;
+ }
+ p.ip {
+  color: white;
+  background-color: green;
+}
+ p.taraba {
+  color: rgb(19, 161, 19);
+  font-size: 20px;
+  border-style: ;
+  border-width: 5px;
+  font-family: cursive;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
   p.course {
       text-align: center;
       margin-top: 5px;
       margin-bottom: 5px;
       font-size: larger;
       border-color: seashell;
+      text-decoration: underline;
+      font-family: bradley hand, cursive;
   }
 
   p.avail {
@@ -186,18 +218,21 @@ body {
   }
   p.newton {
     font-family: cursive;
+    text-align: center;
   }
-
   p.newton1 {
     font-family: cursive;
-    font-size: 20px;
+    text-align: center;
+    font-size: 25px;
   }
-  p.icon {
-       margin-top: 20px;
-       margin-bottom: 20px;
-}
     img.profile {
       margin-top: 20px;
       margin-bottom: 0px;
     }
-  }
+
+    hr.line {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+  
