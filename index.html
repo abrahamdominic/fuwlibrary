@@ -160,7 +160,7 @@
   <p class="newton">"Here you get  Materials such as Pdfs, Past Questions, Presentations, Seminars etc.</p>
   <p class="get">Get Started</p>
 </div>
-<scrpt>const date = new Date();
+<script>const date = new Date();
 console.log(date); // Fri Jun 17 2022 11:27:28 GMT+0100 (British Summer Time)</script>
 <center><p><video id="Test_Video" width="80%" height="100%" controls autoplay>
   <source src="./Anonymous.mp4" type="video/mp4">
@@ -182,7 +182,15 @@ console.log(date); // Fri Jun 17 2022 11:27:28 GMT+0100 (British Summer Time)</s
 
 <p class="course">Our Popular Courses</p>
 
+<script>const date = new Date();
 
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+
+// This arrangement can be altered based on how we want the date's format to appear.
+let currentDate = `${day}-${month}-${year}`;
+console.log(currentDate); // "17-6-2022"</script>
 
 <script>
 function myFunction() {
