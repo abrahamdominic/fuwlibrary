@@ -160,8 +160,21 @@
   <p class="newton">"Here you get  Materials such as Pdfs, Past Questions, Presentations, Seminars etc.</p>
   <p class="get">Get Started</p>
 </div>
-<script>const date = new Date();
-console.log(date); // Fri Jun 17 2022 11:27:28 GMT+0100 (British Summer Time)</script>
+<script>     // program to display the date
+// get local machine date time
+const date = new Date();
+
+// get the date as a string
+const n = date.toDateString();
+
+// get the time as a string
+const time = date.toLocaleTimeString();
+
+// display date
+console.log('Date: ' + n);
+
+// display time
+console.log('Time: ' + time);   </script>
 <center><p><video id="Test_Video" width="80%" height="100%" controls autoplay>
   <source src="./Anonymous.mp4" type="video/mp4">
 </video></p></center>
