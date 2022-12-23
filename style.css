@@ -217,3 +217,13 @@ font-family: monaco, monospace;
       margin-top: 20px;
     }
     
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 16px;
+  }
+  .grid-item {
+    background-color: lightblue;
+    border: 1px solid darkblue;
+    text-align: center;
+  }
