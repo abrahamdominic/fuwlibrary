@@ -227,23 +227,43 @@ function myFunction() {
 
 
 <script>
-	function displayIpInfo() {
-  fetch('https://api.ipify.org?format=json')
-    .then(response => response.json())
-    .then(data => {
-      const ip = data.ip;
-      document.getElementById('ip').innerHTML = `Your IP address is: ${ip}`;
-
-      fetch(`https://ipapi.co/${ip}/json/`)
-        .then(response => response.json())
-        .then(data => {
-          const location = `${data.city}, ${data.region} ${data.postal} ${data.country_name}`;
-          document.getElementById('location').innerHTML = `Your location is: ${location}`;
-        });
-    });
+	const geoFindMe = () => {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, error, geoOptions);
+    } else {
+        console.log("Geolocation services are not supported by your web browser.");
+    }
 }
 
-displayIpInfo();
+const success = (position) => {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    const altitude = position.coords.altitude;
+    const accuracy = position.coords.accuracy;
+    console.log(`lat: ${latitude} long: ${longitude}`);
+}
+
+const error = (error) => {
+    var request = new XMLHttpRequest();
+    request.open('GET', 'https://api.ipdata.co/?api-key=APIKEY');
+    request.setRequestHeader('Accept', 'application/json');
+    request.onreadystatechange = function () {
+      if (this.readyState === 4) {
+        data = JSON.parse(this.responseText)
+        console.log(`lat: ${data.latitude} long: ${data.longitude}`);
+      }
+    };
+    request.send();
+}
+
+const geoOptions = {
+    enableHighAccuracy: true,
+    maximumAge: 30000,
+    timeout: 27000
+};
+
+// call the function
+geoFindMe()
 </script>
 <footer>
   
