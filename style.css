@@ -227,3 +227,8 @@ font-family: monaco, monospace;
     border: 1px solid darkblue;
     text-align: center;
   }
+p.ip {
+background-color: green;
+color: white;
+font-size: 20px;
+}
