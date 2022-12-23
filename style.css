@@ -189,7 +189,10 @@ p.img {
       font-weight: 100px;
       font-family: didot, serif;
   }
-  
+  p.braham {
+font-size: 50px;
+font-family: didot, serif;
+
   p.why {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -231,7 +234,7 @@ p.img {
     img.profile {
       margin-top: 20px;
       margin-bottom: 0px;
-      padding-right: 70px;
+      
     }
 
     hr.line {
