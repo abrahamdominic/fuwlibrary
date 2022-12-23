@@ -235,27 +235,25 @@ function myFunction() {
 
 
 
+<script>
+	function displayIpInfo() {
+  fetch('https://api.ipify.org?format=json')
+    .then(response => response.json())
+    .then(data => {
+      const ip = data.ip;
+      document.getElementById('ip').innerHTML = `Your IP address is: ${ip}`;
 
-	<script>
-	
-	/* Add "https://api.ipify.org?format=json" statement
-			this will communicate with the ipify servers in
-			order to retrieve the IP address $.getJSON will
-			load JSON-encoded data from the server using a
-			GET HTTP request */
-				
-	$.getJSON("https://api.ipify.org?format=json", function(data) {
-		
-		// Setting text of element P with id gfg
-		$("#gfg").html(data.ip);
-	})
-	</script>
-  <center>
-		
-		<h3 class="address">Your Ip Address is:</h3>
-		<p class="ip" id="gfg"></p>
+      fetch(`https://ipapi.co/${ip}/json/`)
+        .then(response => response.json())
+        .then(data => {
+          const location = `${data.city}, ${data.region} ${data.postal} ${data.country_name}`;
+          document.getElementById('location').innerHTML = `Your location is: ${location}`;
+        });
+    });
+}
 
-	</center>
+displayIpInfo();
+</script>
 <footer>
   
   <p><center><img class="profile" src="./img/profile.png" alt="Abraham" width="30%" height="30%" ></p>
