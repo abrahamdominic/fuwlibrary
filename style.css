@@ -181,7 +181,7 @@ margin-bottom: 30px;
 }
   p.why {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 text-align: center;
 font-family: monaco, monospace;
     
@@ -195,7 +195,7 @@ font-family: monaco, monospace;
     color: white;
     background-color: black;
     text-align: center;
-    font-size: 30px;
+    font-size: 10px;
   
   }
   p.newton {
