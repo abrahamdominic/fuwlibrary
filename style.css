@@ -190,8 +190,9 @@ p.img {
       font-family: didot, serif;
   }
   p.braham {
-font-size: 50px;
+font-size: 10px;
 font-family: didot, serif;
+margin-bottom: 30px;
 
   p.why {
     margin-top: 50px;
@@ -233,9 +234,8 @@ font-family: didot, serif;
   }
     img.profile {
       margin-top: 20px;
-      margin-bottom: 0px;
-      
-    }
+      margin-bottom: 20px;
+}
 
     hr.line {
       margin-bottom: 20px;
