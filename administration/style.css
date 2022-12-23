@@ -151,6 +151,12 @@ p.img {
  p.ip {
   color: white;
   background-color: green;
+font-size:10px;
+text-align: center;
+}
+p.h3{
+font-size: 10px;
+text-align: center;
 }
  p.taraba {
   color: rgb(19, 161, 19);
