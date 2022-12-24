@@ -14,6 +14,9 @@
     rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
+<script src="path/to/your/script.js"></script>
+
+
 <body>
 
   <div class="topnav" id="myTopnav">
@@ -221,8 +224,68 @@ function myFunction() {
 	</script>
 	
 
+<script>
+// Select the elements for the next and previous buttons
+const nextButton = document.querySelector('.next-button');
+const prevButton = document.querySelector('.prev-button');
 
+// Set the initial index to 0
+let index = 0;
 
+// Create an array of your posts
+const posts = [
+  {
+    title: 'Post 1',
+    content: 'Content for post 1...'
+  },
+  {
+    title: 'Post 2',
+    content: 'Content for post 2...'
+  },
+  {
+    title: 'Post 3',
+    content: 'Content for post 3...'
+  },
+  // Add more posts here...
+];
+
+// Function to display the current post
+const displayPost = () => {
+  // Get the current post
+  const post = posts[index];
+
+  // Update the title and content elements with the post data
+  document.querySelector('.post-title').textContent = post.title;
+  document.querySelector('.post-content').textContent = post.content;
+
+  // Disable the previous button if on the first post
+  if (index === 0) {
+    prevButton.disabled = true;
+  } else {
+    prevButton.disabled = false;
+  }
+
+  // Disable the next button if on the last post
+  if (index === posts.length - 1) {
+    nextButton.disabled = true;
+  } else {
+    nextButton.disabled = false;
+  }
+};
+
+// Display the first post on page load
+displayPost();
+
+// Add click event listeners to the next and previous buttons
+nextButton.addEventListener('click', () => {
+  index++;
+  displayPost();
+});
+prevButton.addEventListener('click', () => {
+  index--;
+  displayPost();
+});
+</script>
 
 
 
