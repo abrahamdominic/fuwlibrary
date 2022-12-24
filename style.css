@@ -122,6 +122,8 @@ p.wukari {
   font-family: brush script mt, cursive;
   font-size: 40px;
   text-align: center;
+margin-bottom: 20px;
+margin-top: 10px;
 }
   
   p.text {
@@ -132,7 +134,9 @@ p.wukari {
   }
   
 p.img {
-  margin-top: 20px;
+  margin-top: 30px;
+margin-bottom: 30px;
+
 }
 
  h3.address {
@@ -156,13 +160,13 @@ margin-bottom: 10px;
   border-width: 5px;
   font-family: cursive;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
   p.course {
       text-align: center;
-      margin-top: 5px;
-      margin-bottom: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       font-size: 20px;
       text-decoration: underline;
       font-family: arial, sans-serif;
@@ -204,6 +208,8 @@ font-family: monaco, monospace;
     background-color: black;
     text-align: center;
     font-size: 10px;
+margin-bottom: 20px;
+margin-top: 8px;
   
   }
   p.newton {
