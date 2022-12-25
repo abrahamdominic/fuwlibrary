@@ -173,6 +173,8 @@ margin-bottom: 10px;
   }
 p.goal {
 font-family: arial, sans-serif;
+text-align: center;
+font-size: 30px;
 }
   div.art {
       border: 1px solid black;
