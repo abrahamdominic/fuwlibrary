@@ -158,7 +158,7 @@
 <p><span class="lord"><marquee class="fuwuakri">Federal University Wukari Student E - Library</marquee></span></p>
 <div style="padding-left:16px">
   <p class="newton">"Here you get  Materials such as Pdfs, Past Questions, Presentations, Seminars etc.</p>
-  <p class="get">Get Started</p>
+  
 </div>
 
 <center><p><video id="Test_Video" width="100%" height="100%" controls autoplay>
@@ -203,17 +203,43 @@ function myFunction() {
   }
 }
 </script>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 <footer>
-  <div class="uloko">
+  
   <p><center><img class="profile" src="./img/profile.png" alt="Abraham" width="30%" height="30%" ></p>
   <p class="abraham">Designed & Developed with love ❤ by</p>
   <p class="newton1">Abraham Cyber Tech</p><hr class="line">
- <p class="icon"> <a href="https://twitter.com/abrahamdomenick" target="_blank"><img src="./img/tt.png" alt="Twitter" width="50px" height="50px"></a>  <a href="mailto:abrahamdominic005@gmail.com" target="_blank"><img src="./img/email.png" alt="email" width="50px" height="50px"></a> <a href="api.whatsapp.com">   <a href="https://linkedin.com/in/abrahamdominicnewton" alt="linkedin" target="_blank"><img src="./img/linkedin.png" alt="Twitter" width="50px" height="50px"></a>  <a href="https://instagram.com/abrahamdomenik" target="_blank"><img src="./img/ig.jpeg" alt="Twitter" width="50px" height="50px"></a>  <a href="https://api.whatsapp.com/+2348144561262" target="_blank"><img src="./img/whatsapp.jpeg" alt="whatsapp" width="50px" height="50px"></a></p> 
-  <p class="abraham"><script>document.write(new Date().getFullYear())</script>  <i class="fa fa-copyright" aria-hidden="true"></i> F.U.W Student Library All rights reserved  </p>
-  <p class="newton1">Abraham Dominic Uloko</p></center>
-  
-  
-</div>
+ <p class="icon"> <a href="https://twitter.com/abrahamdomenick" target="_blank"><img src="./img/tt.png" alt="Twitter" width="30px" height="30px"></a>  <a href="mailto:abrahamdominic005@gmail.com" target="_blank"><img src="./img/email.png" alt="email" width="30px" height="30px"></a>   <a href="https://linkedin.com/in/abrahamdominicnewton" alt="linkedin" target="_blank"><img src="./img/linkedin.png" alt="Linkedin" width="30px" height="30px"></a>  <a href="https://instagram.com/abrahamdomenik" target="_blank"><img src="./img/ig.png" alt="Imstagram" width="30px" height="30px"></a>  <a href="https://api.whatsapp.com/+2348144561262" target="_blank"><img src="./img/whatsapp.png" alt="whatsapp" width="30px" height="30px"></a></p> 
+  <p class="braham"><script>document.write(new Date().getFullYear())</script>  <i class="fa fa-copyright" aria-hidden="true"></i> F.U.W Student Library All rights reserved  </p>
+  </center>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+      <script>
+    /* Add "https://api.ipify.org?format=json" statement
+               this will communicate with the ipify servers in
+               order to retrieve the IP address $.getJSON will
+               load JSON-encoded data from the server using a
+               GET HTTP request */
+
+                
+
+    $.getJSON("https://api.ipify.org?format=json", function(data) {
+
+         
+
+        // Setting text of element P with id gfg
+
+        $("#gfg").html(data.ip);
+
+    })
+
+    </script>
+
+<h3>Your Public IP Address is:</h3>
+
+        <p class="ip" id="gfg"></p>
 </footer>
-</body>
-</html>
+Footer
+
