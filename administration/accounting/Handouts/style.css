@@ -154,18 +154,14 @@ p.img {
 }
   p.course {
       text-align: center;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      font-size: larger;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 30px;
       border-color: seashell;
       text-decoration: underline;
-      font-family: bradley hand, cursive;
+      font-family: arial, sans-serif;
   }
 
-  p.avail {
-      color: red;
-      font-family: sans-serif;
-  }
 
   div.art {
       border: 1px solid black;
@@ -184,6 +180,7 @@ p.img {
   p.why {
     margin-top: 50px;
     margin-bottom: 50px;
+text-align:center;
     
     
   }
@@ -204,9 +201,8 @@ p.img {
     color: white;
     background-color: black;
     text-align: center;
-    font-size: large;
-    border-radius: 100px;
-    border-left: 100px;
+    font-size: 15px;
+    
   }
   p.newton {
     font-family: cursive;
@@ -219,7 +215,7 @@ p.img {
   }
     img.profile {
       margin-top: 20px;
-      margin-bottom: 0px;
+      margin-bottom: 20px;
     }
 
     hr.line {
@@ -229,5 +225,5 @@ p.img {
 
   p.materials, li {
     text-align: center;
-    
+    font-family: monospace;
   }
