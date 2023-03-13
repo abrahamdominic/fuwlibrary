@@ -2,6 +2,8 @@ body {
   margin:0;
   font-family:'Times New Roman', Times, serif;
   background-color: white;
+  
+
 }
 
 .topnav {
@@ -54,9 +56,9 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(28, 49, 28);
+   background-color: rgb(8, 120, 248);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(20, 160, 27, 0.952);
   z-index: 1;
   font-family: bradley hand, cursive;
   font-size: larger;
@@ -120,8 +122,13 @@ p.wukari {
   font-family: brush script mt, cursive;
   font-size: 40px;
   text-align: center;
+margin-bottom: 20px;
+margin-top: 10px;
 }
-  
+  p.first {
+    text-align: center;
+    font-size: large;
+  }
   p.text {
     font-family: sans-serif;
     font-display: center;
@@ -130,43 +137,48 @@ p.wukari {
   }
   
 p.img {
-  margin-top: 20px;
+  margin-top: 30px;
+margin-bottom: 30px;
+
 }
 
- span.lord {
-  color: rgb(19, 161, 19);
-  font-size: 25px;
-  border-width: 5px;
-  font-family: cursive;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+ h3.address {
+   color: white;
+
  }
+ p.ip {
+  color: white;
+  background-color: green;
+font-size:10px;
+text-align: center;
+}
+h3{
+font-size: 10px;
+text-align: center;
+margin-bottom: 10px;
+}
  p.taraba {
   color: rgb(19, 161, 19);
   font-size: 20px;
-  border-style: ;
   border-width: 5px;
   font-family: cursive;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
   p.course {
       text-align: center;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      font-size: larger;
-      border-color: seashell;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 20px;
       text-decoration: underline;
-      font-family: bradley hand, cursive;
+      font-family: arial, sans-serif;
   }
-
-  p.avail {
-      color: red;
-      font-family: sans-serif;
-  }
-
+p.goal {
+font-family: arial, sans-serif;
+text-align: center;
+font-size: 10px;
+}
   div.art {
       border: 1px solid black;
       border-radius: 10px;
@@ -176,59 +188,84 @@ p.img {
   }
 
   p.abraham {
-      font-size: larger;
-      font-weight: 100px;
+      font-size: 15px;
       font-family: didot, serif;
   }
-  
+  p.braham {
+font-size: 10px;
+font-family: didot, serif;
+margin-bottom: 30px;
+}
   p.why {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+text-align: center;
+font-family: monaco, monospace;
     
     
   }
   
-  p.get {
-    font-family: monospace;
-    color: white;
-    background-color: black;
-    text-align: center;
-    font-size: large;
-    border-radius: 100px;
-    border-left: 100px;
-    
-  }
+ 
   
   p.learn {
     font-family: monospace;
     color: white;
     background-color: black;
     text-align: center;
-    font-size: large;
-    border-radius: 100px;
-    border-left: 100px;
+    font-size: 10px;
+margin-bottom: 20px;
+margin-top: 10px;
+  
   }
   p.newton {
+    
+    text-align: center;
+    font-size: 15px;
+  }
+p.newton2 {
     font-family: cursive;
     text-align: center;
+margin-top: 20px;
+margin-bottom:20px;
   }
+
+
   p.newton1 {
     font-family: cursive;
     text-align: center;
     font-size: 25px;
   }
     img.profile {
-      margin-top: 20px;
-      margin-bottom: 0px;
-    }
+      margin-top: 30px;
+      margin-bottom: 20px;
+}
 
     hr.line {
       margin-bottom: 20px;
       margin-top: 20px;
     }
-
-  p.first {
-    text-align: center;
-    font-size: 20px;
-    text-decoration-line: underline;
+    
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 16px;
   }
+  .grid-item {
+    background-color: lightblue;
+    border: 1px solid darkblue;
+    text-align: center;
+  }
+p.ip {
+background-color: green;
+color: white;
+font-size: 20px;
+}
+ span.lord {
+  color: rgb(19, 161, 19);
+  font-size: 25px;
+  border-width: 5px;
+  font-family: cursive;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }

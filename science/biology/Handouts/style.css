@@ -265,3 +265,7 @@ span.lord {
   margin-top: 20px;
   margin-bottom: 20px;
  }
+ p.materials {
+ 	font-size: 12px;
+ 	font-family: none;
+ }

@@ -218,8 +218,9 @@ margin-top: 10px;
   
   }
   p.newton {
-    font-family: cursive;
+    
     text-align: center;
+    font-size: 15px;
   }
 p.newton2 {
     font-family: cursive;

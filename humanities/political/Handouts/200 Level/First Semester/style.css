@@ -125,10 +125,7 @@ p.wukari {
 margin-bottom: 20px;
 margin-top: 10px;
 }
-  p.first {
-    text-align: center;
-    font-size: large;
-  }
+  
   p.text {
     font-family: sans-serif;
     font-display: center;
@@ -218,8 +215,9 @@ margin-top: 10px;
   
   }
   p.newton {
-    font-family: cursive;
+  
     text-align: center;
+    font-size: 15px;
   }
 p.newton2 {
     font-family: cursive;
@@ -259,7 +257,7 @@ background-color: green;
 color: white;
 font-size: 20px;
 }
- span.lord {
+span.lord {
   color: rgb(19, 161, 19);
   font-size: 25px;
   border-width: 5px;
@@ -267,4 +265,8 @@ font-size: 20px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+ }
+ p.materials {
+ 	font-size: 12px;
+ 	font-family: none;
  }

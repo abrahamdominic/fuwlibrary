@@ -125,7 +125,10 @@ p.wukari {
 margin-bottom: 20px;
 margin-top: 10px;
 }
-  
+  p.first {
+    text-align: center;
+    font-size: large;
+  }
   p.text {
     font-family: sans-serif;
     font-display: center;
@@ -215,8 +218,9 @@ margin-top: 10px;
   
   }
   p.newton {
-    font-family: cursive;
+    
     text-align: center;
+    font-size: 15px;
   }
 p.newton2 {
     font-family: cursive;

@@ -215,8 +215,9 @@ margin-top: 10px;
   
   }
   p.newton {
-    font-family: cursive;
+  
     text-align: center;
+    font-size: 15px;
   }
 p.newton2 {
     font-family: cursive;
@@ -264,4 +265,8 @@ span.lord {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+ }
+ p.materials {
+ 	font-size: 12px;
+ 	font-family: none;
  }
