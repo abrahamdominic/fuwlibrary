@@ -60,7 +60,7 @@ body {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(20, 160, 27, 0.952);
   z-index: 1;
-  font-family: bradley hand, cursive;
+  font-family: bradley hand, Roboto, 'Times New Roman', Times, serif;
   font-size: larger;
 }
 
@@ -125,10 +125,7 @@ p.wukari {
 margin-bottom: 20px;
 margin-top: 10px;
 }
-  p.first {
-    text-align: center;
-    font-size: large;
-  }
+  
   p.text {
     font-family: sans-serif;
     font-display: center;
@@ -177,7 +174,7 @@ margin-bottom: 10px;
 p.goal {
 font-family: arial, sans-serif;
 text-align: center;
-font-size: 10px;
+font-size: 12px;
 }
   div.art {
       border: 1px solid black;
@@ -201,6 +198,7 @@ margin-bottom: 30px;
     margin-bottom: 10px;
 text-align: center;
 font-family: monaco, monospace;
+font-size: 20px;
     
     
   }
@@ -212,15 +210,14 @@ font-family: monaco, monospace;
     color: white;
     background-color: black;
     text-align: center;
-    font-size: 10px;
+    font-size: 13px;
 margin-bottom: 20px;
 margin-top: 10px;
   
   }
   p.newton {
-    
+    font-family: roboto;
     text-align: center;
-    font-size: 15px;
   }
 p.newton2 {
     font-family: cursive;
@@ -229,7 +226,12 @@ margin-top: 20px;
 margin-bottom:20px;
   }
 
-
+  p.fu {
+    font-family: Roboto;
+    text-align: center;
+margin-top: 20px;
+margin-bottom:20px;
+  }
   p.newton1 {
     font-family: cursive;
     text-align: center;
@@ -268,4 +270,16 @@ font-size: 20px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+ }
+ p.materials{
+   text-align: center;
+   font-size: 15px;
+   font-family: 'Times New Roman', Times, serif;
+
+ }
+ p.first{
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 20px;
+
  }
