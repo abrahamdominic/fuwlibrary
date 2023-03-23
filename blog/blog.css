@@ -1,8 +1,12 @@
 body {
   margin:0;
   font-family:'Times New Roman', Times, serif;
-  background-color: white;
-  
+  color: var(--black);
+  background: var(--platinum);
+  --platinum: #e5e5e5;
+    --black: #2b2d42;
+    --white: #fff;
+    --thumb: #edf2f4;
 
 }
 
@@ -272,5 +276,14 @@ font-size: 20px;
   margin-bottom: 20px;
  }
  p.fuwukari{
+   text-align: center;
+   font-family: times new roman, lucida sans;
+   font-size: 15px;
+   font-weight: 100;
+ }
+ span.blue{
+   color: blue;
+ }
+ h2, p.v {
    text-align: center;
  }
