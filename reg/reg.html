@@ -1,104 +1,114 @@
-
-<!DOCTYPE html>
-<!-- === Coding by Abrahamcybertech | www.Abrahamcybertech.com === -->
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ===== Iconscout CSS ===== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="reg.css">
-         
-    <!--<title>Login & Registration Form</title>-->
+<title>Google Authentication </title>
+<link rel="stylesheet" href="style.css">
+<script src="javascript.js"></script>
 </head>
+
 <body>
+  
+<div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
     
-    <div class="container">
-        <div class="forms">
-            <div class="form login">
-                <span class="title">Login</span>
-
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
-                        <i class="uil uil-envelope icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Enter your password" required>
-                        <i class="uil uil-lock icon"></i>
-                        <i class="uil uil-eye-slash showHidePw"></i>
-                    </div>
-
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="logCheck">
-                            <label for="logCheck" class="text">Remember me</label>
-                        </div>
-                        
-                        <a href="#" class="text">Forgot password?</a>
-                    </div>
-
-                    <div class="input-field button">
-                        <input type="submit" value="Login">
-                    </div>
-                </form>
-
-                <div class="login-signup">
-                    <span class="text">Not a member?
-                        <a href="#" class="text signup-link">Signup Now</a>
-                    </span>
-                </div>
-            </div>
-
-            <!-- Registration Form -->
-            <div class="form signup">
-                <span class="title">Registration</span>
-
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your name" required>
-                        <i class="uil uil-user"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
-                        <i class="uil uil-envelope icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Create a password" required>
-                        <i class="uil uil-lock icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Confirm a password" required>
-                        <i class="uil uil-lock icon"></i>
-                        <i class="uil uil-eye-slash showHidePw"></i>
-                    </div>
-
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="termCon">
-                            <label for="termCon" class="text">I accepted all terms and conditions</label>
-                        </div>
-                    </div>
-
-                    <div class="input-field button">
-                        <input type="button" value="Signup">
-                    </div>
-                </form>
-
-                <div class="login-signup">
-                    <span class="text">Already a member?
-                        <a href="#" class="text login-link">Login Now</a>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-
+    <input type="text" id="email" name="email" placeholder="E-mail" />
+    <input type="password" id="password" name="password" placeholder="Password" />
+    
+    <input type="submit" id="saveData" name="signup_submit" value="Sign in" />
+  </div>
+  
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+    
+    <button class="social-signin facebook">Log in with facebook</button>
+    <button class="social-signin twitter">Log in with Twitter</button>
+    <button class="social-signin google" id='login'>Log in with Google+</button>
+  </div>
+  <div class="or">OR</div>
+</div>
 </body>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+  import { getAuth ,GoogleAuthProvider, signInWithRedirect, getRedirectResult, signInWithPopup, signOut } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+  // your config code
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider(app);
+
+ login.addEventListener('click',(e) => {
+   // signInWithRedirect(auth, provider);
+
+
+   // redirect the result
+  //  getRedirectResult(auth)
+  //    .then((result) => {
+  //      // This gives you a Google Access Token. You can use it to access Google APIs.
+  //      const credential = GoogleAuthProvider.credentialFromResult(result);
+  //      const token = credential.accessToken;
+
+  //      // The signed-in user info.
+  //      const user = result.user;
+
+  //    }).catch((error) => {
+  //      // Handle Errors here.
+  //      const errorCode = error.code;
+  //      const errorMessage = error.message;
+  //      // The email of the user's account used.
+  //      const email = error.email;
+  //      // The AuthCredential type that was used.
+  //      const credential = GoogleAuthProvider.credentialFromError(error);
+  //      // ...
+       
+  // });
+
+
+// sign in with popup tab
+signInWithPopup(auth, provider)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+
+
+    alert(user.displayName);
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+
+    alert(errorMessage);
+  });
+ });
+
+  signOut.addEventListener('click',(e) => {
+
+   signOut(auth).then(() => {
+    // Sign-out successful.
+   }).catch((error) => {
+    // An error happened.
+   });
+
+  });
+
+</script>
+
 </html>
