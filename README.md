@@ -2,4 +2,4 @@
 "Here you get Materials such as Pdfs, Past Questions, Presentations, Seminars etc. "
 
 # Site Demo
-https://fuwstudentlibrary.netlify.app
+https://fuwelibrary.netlify.app
